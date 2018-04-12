@@ -1,6 +1,8 @@
 Prerequisites
 ======
-Bring your own laptop capable running VS 2017, with the prerequisite .NET core and azure modules installed. Be able to create a trial azure subscription.
+Bring your own laptop capable of running VS 2017, with the prerequisites such as .NET core and azure modules installed (will be detailed below). Be able to create a trial azure subscription.
+
+**Prerequisites:** To Be Detailed by 16th of April 2018
 
 Agenda
 ======
@@ -12,7 +14,12 @@ Agenda
 - **Detail:** Getting ready, last little update, explaining the schedule of the day.
 
 12:00 - 16:45 - Running the HOLs and Proctors supporting people
-- Instructor led, self-paced, proctor supported
+-----------------
+
+- **Speakers:** Taavi Koosaar, Gunnar Peipmann
+- **Proctors:** Gunnar Peipmann, Madis Kõosaar, Taavi Kõosaar 
+
+- Style: Instructor led, self-paced, proctor supported
 
 Topics:
 * Intro to Azure Portal
@@ -20,4 +27,3 @@ Topics:
 * Creating an azure function and deploying that (bonus)
 * Deploying azure resources, application and related artifacts to azure through VSTS 
 * Collecting telemetry and monitoring the application in production using application insight
-* 
