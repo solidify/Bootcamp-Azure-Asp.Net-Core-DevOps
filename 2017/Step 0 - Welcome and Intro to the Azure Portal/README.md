@@ -3,7 +3,7 @@ This suite of labs will guide you to build a functional web application. The pur
 
 ## Step 1
 
-Familiorisation to the Azure portal and a bit of voculabulary.
+Familiarization to the Azure portal and a bit of vocabulary.
 
 ## Step 1
 
@@ -15,7 +15,7 @@ In this step, you are building the backend logic to be able to save the informat
 
 ## Step 3
 
-In this step, we will explore de database.
+In this step, we will explore the database.
 
 ## Step 4
 

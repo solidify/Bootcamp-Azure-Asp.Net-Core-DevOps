@@ -1,6 +1,6 @@
 General
 =====
-Fork from a special version of the Global Azure Bootcamp, this edition integrates Asp.Net Core application, Visual Studio Team Service (VSTS), Entity Framework (EF) in a suite of seven DevOps labs.
+Fork from a special version of the Global Azure Bootcamp 2017 (November), this edition integrates Asp.Net Core application, Visual Studio Team Service (VSTS), Entity Framework (EF) in a suite of seven DevOps labs.
 
 - Style: Instructor led, self-paced, proctor supported
 
@@ -14,9 +14,12 @@ Topics of HOLs:
 
 Prerequisites
 ======
-Bring your own laptop capable of running VS 2017, with the prerequisites such as .NET core and azure modules installed (will be detailed below). Be able to create a trial azure subscription.
+The plan is to use computer class at Tallinn Polytechnic and that should have the necessary software on it. 
+If you prefer to use yours own computer, then you will need the following:
 
 **Prerequisites:** To Be Detailed by 16th of April 2018
+- Latest VS 2017 (15.6.5) with .NET Core cross platform, asp.net and web development, azure development, nodejs workloads with recommended and optional
+- Pre-created or be able to create trial azure subscription (trying to simplify)
 
 Agenda
 ======
