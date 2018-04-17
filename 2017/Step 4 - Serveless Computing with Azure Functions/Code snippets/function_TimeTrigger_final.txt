@@ -1,4 +1,4 @@
-#r "System.Data"
+ #r "System.Data"
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -13,7 +13,7 @@ public static async Task Run(TimerInfo myTimer, TraceWriter log)
         var avr = 0;
         var best = 0;
         conn.Open();
-        var sqlStr = "SELECT FivekmTime FROM [dbo].[RunnerPerformance]";
+        var sqlStr = "SELECT FivekmTime FROM [dbo].[RunnerPerformances]";
         using (SqlCommand cmd = new SqlCommand(sqlStr, conn))
         {
             using (var dataReader = await cmd.ExecuteReaderAsync())
