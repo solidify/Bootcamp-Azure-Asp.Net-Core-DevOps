@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/2017/Step 0 - Welcome and Intro to the Azure Portal/Solutions/WebAppAspNetCore/WebAppAspNetCore.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

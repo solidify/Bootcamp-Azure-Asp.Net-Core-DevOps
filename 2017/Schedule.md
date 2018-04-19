@@ -19,6 +19,7 @@ If you prefer to use yours own computer, then you will need the following:
 
 **Prerequisites:** To Be Detailed by 16th of April 2018
 - Latest VS 2017 (15.6.5) with .NET Core cross platform, asp.net and web development, azure development, nodejs workloads with recommended and optional
+- Git for Windows
 - Pre-created or be able to create trial azure subscription (trying to simplify)
 
 Agenda

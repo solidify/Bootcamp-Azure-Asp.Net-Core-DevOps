@@ -1,18 +1,18 @@
-# Azure Bootcamp Asp.Net Core & DevOps
+# Azure Bootcamp - Asp.Net Core & DevOps
 
-<img align="left" src="Media/AzureBootCampQuebec_2.png" width="250">
+<img align="left" src="Media/logo-2018-500x444.png" width="250">
 
 All around the world user groups and communities want to learn about Azure and Cloud Computing!
 
-On **November 9, 2017**, Quebec communitie will come together for a special edition of an Azure Bootcamp event!
+On **April 21, 2018**, Estonian community will come together for the next Azure Bootcamp event!
 
-You will find included in this repository all materials use during the demo so you can try it at home.
+You will find included in this repository all hands on labs and materials that will be used during the demos and available as hands-on-labs so you can try it at the event and later at home.
 
-## Our speakers for the Azure Bootcamp Asp.Net Core & DevOps 2017
+## Our speakers for the Azure Bootcamp - HOLs for Asp.Net Core & DevOps 2017
 
-- Hinault Donfack (@hinault)
-- Mathieu Benoit (@mathieu-benoit)
-- Frank Boucher (@fboucher)
+- Taavi Koosaar (@melborp)
+- Gunnar Peipmann
+- Madis Koosaar
 
 You can find the complete shedule [here](./Schedule.md).
 
@@ -28,7 +28,7 @@ You can find the complete shedule [here](./Schedule.md).
 - [Visual Studio Team Services)](https://www.visualstudio.com/team-services/)
 
 ## What you will need before the bootcamp?
-Before the bootcamp, we encourage you to make sure you have all the requirement software so you can concentrate on learning and not running installations.  Make sure you get all the source code and install all the required software.
+We will use computer class at Tallinn Polytechnic with the required Software, so you will need positive energy and passion to join and go through the HOLs. 
 
 ### Azure subscription
 If you don't own an Azure subscription already, you can create your free account today. It comes with 200$ credit, so you can experience almost everything without spending a dime.
@@ -38,24 +38,22 @@ Make sure to have your account up and ready before the bootcamp.
 [Create your free Azure account today](https://azure.microsoft.com/en-us/free/)
 
 ### Visual Studio
-To use the demo code, you are required to install Microsoft Visual studio. The minimum version of Visual Studio to use with the demo code is 2017 version 15.4. [You can download a free trial of Visual Studio here](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)
+To use the demo code, you are required to install Microsoft Visual studio. The minimum version of Visual Studio to use with the demo code is 2017 version 15.6.5. [You can download a free trial of Visual Studio here](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)
 
-Visual Studio 2017 introduce the new installation experience. You can use it to customize your installation by selecting the feature sets�or workloads�that you want. Select ASP.NET and Web developement and select Azure development. 
+Visual Studio 2017 introduce the new installation experience. You can use it to customize your installation by selecting the feature sets or workloads that you want. Select ASP.NET and Web development and select Azure development. 
 
 ![img1][img1]
 
-### Azure SDK - 2.9.6
-If during installation you didn't select Azure development Workload, make sure you have installed [Microsoft Azure SDK for .NET - 2.9.6](https://www.microsoft.com/en-us/download/details.aspx?id=54289)
+### Azure SDK - 3.0 or later
+If during installation you didn't select Azure development Workload, make sure you have installed [Microsoft Azure SDK for .NET - 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=54917)
 
-### .NET Core - 2.0
-If during installation you didn't select ASP.NET and Web developement Workload, make sure you have installed [.NET Core SDK - 2.0](https://www.microsoft.com/net/download/windows)
+### .NET Core - 2.1.105 SDK
+If during installation you didn't select ASP.NET and Web development Workload, make sure you have installed [.NET Core SDK - 2.1.105](https://www.microsoft.com/net/download/windows)
 
-### Azure PowerShell - 4.4.1 or later
-Make sure you have installed [Azure PowerShell v4.4.1](https://github.com/Azure/azure-powershell/releases/tag/v4.4.1-October2017) or later.
+### Azure PowerShell - 5.6 or later
+Make sure you have installed [Azure PowerShell v5.6.0](https://github.com/Azure/azure-powershell/releases/tag/v5.6.0-March2018) or later.
 
 ### Git
 Make sure to have Git installed. You can have nice GUI but the console is the only requirement. you can pick the version for your OS on [Git](https://git-scm.com/downloads)
 
 ## End
-
-[img1]: Media/img1.PNG "Visual Studio 2017 Installation"
