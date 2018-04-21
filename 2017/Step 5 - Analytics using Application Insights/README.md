@@ -34,22 +34,35 @@ Note in the appsettings.json file, you should find the a new section:
 
   ```
 
-## Add code to track javascript calls
+## Track javascript calls
 
-In file `/Views/Shared/_Layout.cshtml`, copy and paste the following javascript code immediatly befor the `</html>` tag and then copy and paste the instrumentation key.
+Note that in file `/Views/Shared/_Layout.cshtml` has been updated with two lines of code `@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet`  and `@Html.Raw(JavaScriptSnippet.FullScript)` which inlcudes javascript tracking code. 
 
-```javascript
+```cshtml
 
-<script type="text/javascript">
-var appInsights=window.appInsights||function(config)
-{
-	function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t    }(
+@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClasseAffaires Azure Bootcamp</title>
 
-{        instrumentationKey:"YOUR INSTRUMENTATION KEY HERE"    });
-
- window.appInsights=appInsights;    appInsights.trackPageView();</script>
-
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
 ```
+Take a look at `Program.cs` and it is already including `UseApplicationInsights()`. That means you can comment out the two lines in the `/Views/Shared/_Layout.cshtml`. 
+
 
 Note that this code is available in the portal (App Insight -> Getting Started -> Monitor and diagnose client side application)
 
@@ -114,9 +127,9 @@ now in the layout file `views\Shared\_Layout.cshtml`, after line 37, add;
 
 ```
 
-Now run the applicaiton and click on the 'Service' link on the top. You should see and exception stack.
+Now run the application and click on the 'Service' link on the top. You should see and exception stack.
 
-Back to visual studio, under the ApplicationInsights.config file, click on `Search debug session telemetry' and you should see the failed request along with the details.
+Back to visual studio, under the Solutuin Explorer -> Connected Services -> Application Insights folder, right click on `Application Insights folder' and choose 'Search Live Telemtry' you should see the Application Insight Search opens up. Choose 'Search debug session telemtry'. You should see failed request along with the details.
 
 ## Tracking Handled Exceptions
 
