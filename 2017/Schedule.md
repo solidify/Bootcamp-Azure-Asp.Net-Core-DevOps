@@ -37,7 +37,7 @@ Agenda
 - **Speaker:** Taavi Kõosaar
 - **Detail:** Getting ready, last little update, explaining the schedule of the day.
 
-12:00 - 16:45 - Running the HOLs and Proctors supporting people
+13:00 - 16:45 - Running the HOLs and Proctors supporting people
 -----------------
 
 - **Speakers:** Taavi Koosaar, Gunnar Peipmann
