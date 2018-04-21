@@ -31,6 +31,12 @@ Agenda
 - **Speaker:** Taavi Kõosaar
 - **Detail:** Getting ready, last little update, explaining the schedule of the day.
 
+11:45 - 13:00 - Azure & DevOps HOLs run through masterclass
+------------------
+
+- **Speaker:** Taavi Kõosaar
+- **Detail:** Getting ready, last little update, explaining the schedule of the day.
+
 12:00 - 16:45 - Running the HOLs and Proctors supporting people
 -----------------
 
