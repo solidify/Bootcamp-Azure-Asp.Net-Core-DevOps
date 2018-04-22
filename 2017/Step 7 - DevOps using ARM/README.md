@@ -10,7 +10,7 @@ As a base project use solution found in folder Solution2.
 
 
 # Setup Build definition
-Login to your VSTS account. Go to your project and choose Builds from the top menu. Open Build definition that was created in Step 6. Add/Remove Build Tasks according to the picture below. 
+Login to your VSTS account. Go to your project and choose Builds from the top menu. Open Build definition that was created in Step 6. Add/Remove Build Tasks according to the picture below. For the verion assemblies task, you need to install VSTS extension from the market place called `Manifest Versioning Build Tasks`.
 
 ![Build Definition Task List](./Media/BuildDefinitaionTasksList.PNG)
 
